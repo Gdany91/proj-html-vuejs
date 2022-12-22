@@ -181,8 +181,10 @@
     width: 100rem;
     border: 1px solid lightgrey;
     box-shadow:2px 1px 5px grey ;
-    height: 150px;
+    height: 200px;
     margin-bottom: 50px;
+    margin-left: -260px;
+    margin-top: 100px;
     display: flex;
     padding: 0 10%;
 
@@ -194,6 +196,11 @@
         
         img {
             width: 50%;
+            cursor: pointer;
+
+            &:hover{
+                width: 60%;
+            }
             
         }
 

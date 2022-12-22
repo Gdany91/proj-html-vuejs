@@ -18,6 +18,7 @@
 a{
     color: white;
     text-decoration: none;
+    
 
 }
 
@@ -33,6 +34,7 @@ a{
     
     &:hover{
       background-color: $color-white ;
-      color:#d86b6e
+      color:#d86b6e;
+      border: 1px solid  #d86b6e;
     }
 }
