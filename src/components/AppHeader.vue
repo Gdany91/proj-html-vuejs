@@ -6,10 +6,12 @@ export default {
    data() {
     
     return {
+      active: 0,
       link: [
           {
           name: "Home",
-          href: "#"
+          href: "#",
+          
           
           },
 
@@ -51,7 +53,15 @@ export default {
 
       ]
     }
+    
+  },
+
+  methods: {
+    activeLink(index) {
+      this.active = index
+    }
   }
+  
 }
 
 </script>
@@ -70,7 +80,9 @@ export default {
                 
               <ul class="list">
                 <li v-for="(item, index) in link" :key="index" >
-                    <a href="">{{item.name}}</a>
+                    <a href="" :class="(active === index) ? 'active' : ''" @click="activeLink(index)">
+                      {{item.name}}
+                    </a>
                 </li>
               </ul> 
             
@@ -149,13 +161,22 @@ export default {
       justify-content: space-between;
       align-items: center;
       list-style-type: none;
-      gap: 10px;
+      gap: 30px;
 
       a{
               text-decoration: none;
               color: $color-white;
               font-weight: bold;
               font-size: 20px;
+
+              &:active,
+              &:hover{
+                color: #e9d758;
+                font-size: 25px;
+                
+              }
+
+             
               
 
       }
@@ -163,27 +184,7 @@ export default {
    
 
       }
-   .button{
-        background-color:#e9d758 ;
-        padding: 15px 25px;
-        margin: 15px;
-        border-radius: 25px;
-        font-weight: bold;
-        color: $color-white;
-        cursor: pointer;
-
-        &:hover{
-          background-color: $color-white ;
-          color:#d86b6e
-        }
-
-        
-        
-        
-        
-      
-        
-      }
+  
 }
 
 

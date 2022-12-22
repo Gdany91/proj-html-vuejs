@@ -139,6 +139,7 @@
                      
                   <a href="" class="title-text "><h3>{{ item.title }}</h3></a>
                   <a :href="item.href" v-for="(items, index) in item.list">{{ items.name }} </a>
+                  
 
                </li>
             </ul>
@@ -150,14 +151,16 @@
                   <a :href="item.href" v-for="(items, index) in item.list">{{ items.name }} </a>
 
                </li>
+               
             </ul>
+            
          
       </section>
       
       <section class="search">
          <div class="input-src">
             <span class="input">Search...</span>
-            <span class="icon-search"></span>
+            <span class="icon-search"><i class="fa-regular fa-magnifying-glass"></i></span>
          </div>
 
          <ul class="list">
@@ -168,6 +171,9 @@
 
                </li>
          </ul>
+         <span class="link">
+            <a href="" >ModelTheme.All righta reserved.</a>
+         </span>
 
       </section>
       <section></section>
@@ -250,7 +256,10 @@
          width: 80px;
          height: 80px;
          border-radius: 50%;
-      }
+
+       
+      } 
+       
 
    }
 
@@ -265,7 +274,8 @@
          flex-wrap: wrap;
          flex-direction: column;
          align-items: flex-end;
-         line-height: 50px;
+         line-height: 70px;
+         margin-top: 30px;
 
          .Search-item{
             display: flex;
@@ -280,8 +290,16 @@
             }
 
          }
-      }
 
+         
+      }
+      .link{
+            margin-top: 30px;
+           a{
+            color: #e9d758;
+            font-size: 18px;
+           } 
+         }
       
      
      

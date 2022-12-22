@@ -1,12 +1,13 @@
-
+@use '../styles/partials/variables.scss' as *;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Patrick Hand", cursive;
 }
 
 .container{
-    padding: 1% 20%;
+    padding: 1% 15%;
 }
 
 .logo{
@@ -18,4 +19,20 @@ a{
     color: white;
     text-decoration: none;
 
+}
+
+.button{
+    background-color:#e9d758 ;
+    padding: 15px 25px;
+    margin: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: $color-white;
+    cursor: pointer;
+
+    
+    &:hover{
+      background-color: $color-white ;
+      color:#d86b6e
+    }
 }
