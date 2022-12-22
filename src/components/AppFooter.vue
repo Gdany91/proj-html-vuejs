@@ -160,7 +160,7 @@
       <section class="search">
          <div class="input-src">
             <span class="input">Search...</span>
-            <span class="icon-search"><i class="fa-regular fa-magnifying-glass"></i></span>
+            <span class="icon-search" icon="fa-solid fa-magnifying-glass"> </span>
          </div>
 
          <ul class="list">
@@ -256,6 +256,7 @@
          width: 80px;
          height: 80px;
          border-radius: 50%;
+         cursor: pointer;
 
        
       } 
@@ -276,16 +277,20 @@
          align-items: flex-end;
          line-height: 70px;
          margin-top: 30px;
+         
+         
 
          .Search-item{
             display: flex;
             justify-content: end;
             flex-wrap: wrap;
+            
             a{
                border: 1px solid white;
                margin: 5px;
                padding: 7px 12px;
                border-radius: 25px;
+               cursor: pointer;
 
             }
 
@@ -298,6 +303,7 @@
            a{
             color: #e9d758;
             font-size: 18px;
+            
            } 
          }
       

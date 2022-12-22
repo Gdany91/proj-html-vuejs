@@ -50,10 +50,14 @@
             <span>A single university with a load of courses, tailored to satisfy any student's needs</span>
         </div>
 
-            
-
+    </div>  
+    
+    <div class="menu">
 
     </div>
+
+
+    
 
 
 
@@ -86,6 +90,7 @@ margin-bottom: 50px;
         
         padding-right: 90px;
         padding-bottom: 50px;
+        
         img{
             width: 70px;
         }
@@ -130,6 +135,15 @@ margin-bottom: 50px;
         display: inline-block;
       
     }
+}
+
+.menu{
+    width: 100rem;
+    border: 1px solid lightgrey;
+    box-shadow:2px 1px 5px grey ;
+    height: 150px;
+    margin-bottom: 50px;
+    display: flex;
 }
 
 
