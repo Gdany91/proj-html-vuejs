@@ -123,7 +123,7 @@ export default {
 
 .container{
  
-  background-color: #d86b6e;
+  background-color: #e56768;
   min-height: 400px;
   padding: 3% 5%;
   position: relative;

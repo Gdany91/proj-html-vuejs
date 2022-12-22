@@ -191,7 +191,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color:#d86b6e ;
+   background-color:#e56768;
    min-height: 200px;
    padding: 2% 3%;
 
