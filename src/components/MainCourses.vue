@@ -102,19 +102,20 @@
 
 
 .container{
-margin-bottom: 150px;
-position: relative;
-    .wave-bot{
-        position: absolute;
-        bottom: -155px;
-        left: 0;
-        
-    }
+    margin-top: 150px;
+    margin-bottom: 150px;
+    position: relative;
+        .wave-bot{
+            position: absolute;
+            bottom: -155px;
+            left: 0;
+            
+        }
 
     .wave-top{
         position: absolute;
-        left: -13px;
-        top: -2px;
+        left: -27px;
+        top: -160px;
 
     }
 
